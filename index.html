@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="/todoapp/style.css">
+</head>
+<body>
+    <div id="outer">
+    <div id="header">
+        <h1>My To-Do List</h1>
+        <label>Enter Your task:</label>
+        <br><br>
+        <input id="task" type="text" placeholder="type task here">
+        <br><br>
+        <label>Deadline(optional):</label>
+        <input type="date" id="date">
+        <br><br>
+        <button onclick="handleSubmit()">ADD</button>
+        <button onclick="handleClear()">CLEAR</button>
+        <button onclick="render()" id="display">DISPLAY TASKS</button>
+        <br><br>
+         <input type="text" id="search" placeholder="search">
+         <br><br>
+         <label>Total Tasks:</label>
+         <label id="ntask"></label>  
+    </div>
+    <form id="form">
+        <label>Enter the task:</label>
+        <input type="text" id="updatevalue">
+        <br><br>
+        <button id="handleEdit" type="button" >UPDATE</button>
+    </form>
+    <div id="todolist"></div>
+    </div>
+</body>
+<script src="/todoapp/script.js"></script>
